@@ -1,0 +1,82 @@
+/* FERRAMENTA PARA CRIAR O GRADIENTE MAIS FÁCILMENTE: https://cssgradient.io/   */ 
+
+* {  /* ISSO É MUITO USADO E SERVE PARA RESETAR OU ZERAR TODAS AS MARGINS E PADDINGS DA PÁGINA*/
+    margin:0px;
+    padding:0px;
+}
+
+html, body {
+    height:100%;  /* SE NÃO FIZER ISSO, O DEGRADÊ VAI FICAR COM LINHAS */ 
+
+}
+
+body{
+    background: rgb(54,77,204);
+    background: linear-gradient(180deg, rgba(54,77,204,1) 0%, rgba(19,38,145,1) 39%);
+    color:white;
+    font-family: 'Raleway', sans-serif;
+    
+}
+
+.avatar{
+    width:80px;
+    border-radius:50px;
+    border: 3px solid white;
+    box-shadow: 0 0 20px white; /* O PRIMEIRO ZERO SIGNIFICA POSIÇÃO LATERAL, O SEGUNDO, POSIÇÃO VERTICAL*/ 
+
+}
+
+h1{
+    font-family: 'Architects Daughter', cursive;
+    font-weight: 100;
+    font-size: 25px;
+    margin-bottom:2px;
+}
+
+h2{
+    font-size:16px;
+    
+}
+
+.profile{
+    margin-top:20px;
+    text-align:center;
+}
+
+.social{
+    display:flex; /* ESTE COMANDO FAZ COM QUE OS ITENS DA LISTA FIQUEM LADO A LADO */
+    justify-content:space-around; /* SÓ FUNCIONA COM O FLEX E ELE VAI JUSTIFICAR O CONTEÚDO NO ESPAÇO */
+    list-style:none; /* PARA REMOVER AS BOLINHAS DA LISTA */ 
+    margin: 20px 0; /* 10 PX PARA TOPO E BOTTOM E 0 PARA LEFT E RIGHT*/
+}
+
+.social img {
+    width:33px;
+}
+
+.links-list{
+    list-style:none;    
+}
+
+
+.links-list li{
+    margin:10px 20px;
+}
+
+.links-list li a{
+    background-color:white;
+    padding:15px 20px; /* 15 PX PARA CIMA E PARA BAIXO E 20 NAS LATERAIS */
+    display:block; /* COMO ALGUMAS TAGS SÃO INLINE FAZ COM QUE O CONTEÚDO FIQUE UM SOBRE O OUTRO E O BLOCK RESOLVE ISSO*/
+    border-radius:10px;
+    text-decoration:none;
+    color:rgb(54,77,204);  
+    font-weight: bold;  
+}
+
+.links-list li a span{
+    color: grey;
+    display:block; /* A TAG SPAN POSSUI COMPORTALEMTO INLINE, POR ISSO O BLOCK. COMPONENTES INLINE NÃO POSSUEM MARGEM, FICAM SEMPRE ALINHADOS */
+    margin-top:10px;
+
+}
+    
